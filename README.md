@@ -25,6 +25,8 @@ O objetivo é demonstrar como dados de transparência podem ser apresentados em 
 prototipo-dashboard-ongs/  
 │── app.py  # Código principal do dashboard  
 │── requirements.txt  # Dependências do projeto  
+│── emblema-ouro.png  # Imagem do emblema de ouro  
+│── logo-exemplo.jpg  # Imagem do logo de exemplo  
 │── README.md  # Documentação do projeto  
 │── .gitignore  
 
