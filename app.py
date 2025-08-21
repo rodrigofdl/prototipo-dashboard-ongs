@@ -87,7 +87,7 @@ with col2:
             </a>
         </h1>
         """,
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
 
 with col3:
@@ -129,9 +129,7 @@ with col1:
     )
     fig_donut.update_layout(
         title=dict(
-            text="Documentos Preenchidos",
-            x=0.31,
-            font=dict(color="black", size=22)
+            text="Documentos Preenchidos", x=0.05, font=dict(color="black", size=22)
         ),
         font=dict(size=14, color="black"),
         showlegend=False,
@@ -162,14 +160,12 @@ with col2:
     )
     fig_pie.update_layout(
         title=dict(
-            text="Distribuição de Termos",
-            x=0.33,
-            font=dict(color="black", size=22)
+            text="Distribuição de Termos", x=0.05, font=dict(color="black", size=22)
         ),
         font=dict(size=14, color="black"),
         showlegend=False,
-    paper_bgcolor="#f5f5f5",
-    plot_bgcolor="white",
+        paper_bgcolor="#f5f5f5",
+        plot_bgcolor="white",
     )
 
     st.plotly_chart(fig_pie, use_container_width=True)
@@ -185,7 +181,6 @@ fig_line = px.line(
     y="Visualizações",
     markers=True,  # Adiciona pontos na linha
 )
-
 # Customização da linha
 fig_line.update_traces(
     line=dict(color="#f4842b", width=3),
@@ -195,8 +190,8 @@ fig_line.update_traces(
 fig_line.update_layout(
     title=dict(
         text="Visualizações ao longo do tempo",
-        x=0.42,
-        font=dict(color="black", size=22)
+        x=0.05,
+        font=dict(color="black", size=22),
     ),
     xaxis_title="Data",
     yaxis_title="Número de Visualizações",
@@ -206,7 +201,6 @@ fig_line.update_layout(
     paper_bgcolor="#f5f5f5",
     plot_bgcolor="#f5f5f5",
 )
-
 # Ajustes detalhados nos eixos
 fig_line.update_xaxes(
     showgrid=True,
@@ -217,7 +211,6 @@ fig_line.update_xaxes(
     tickfont=dict(color="black"),
     title_font=dict(color="black"),
 )
-
 fig_line.update_yaxes(
     showgrid=True,
     gridwidth=1,
@@ -227,6 +220,5 @@ fig_line.update_yaxes(
     tickfont=dict(color="black"),
     title_font=dict(color="black"),
 )
-
 
 st.plotly_chart(fig_line, use_container_width=True)
