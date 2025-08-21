@@ -17,7 +17,7 @@ O objetivo é demonstrar como dados de transparência podem ser apresentados em 
 
 - [Python](https://www.python.org/)  
 - [Streamlit](https://streamlit.io/)  
-- [Altair](https://altair-viz.github.io/)  
+- [Plotly](https://plotly.com/)  
 - [Pandas](https://pandas.pydata.org/)  
 
 ## 📂 Estrutura do projeto
